@@ -1,0 +1,36 @@
+.excel-header {
+  display         : flex;
+  justify-content : space-between;
+  position        : absolute;
+  top             : 0;
+  right           : 0;
+  left            : 0;
+  height          : $header-height;
+  padding         : 8px 4px 0;
+
+  .input {
+    margin        : 0;
+    padding       : 2px 7px;
+    color         : #000000;
+    border        : 2px solid transparent;
+    border-radius : 2px;
+    min-width     : 1px;
+    height        : 20px;
+    font-size     : 18px;
+    line-height   : 18px;
+    outline       : none;
+
+    &:focus {
+      border-color : $border-color;
+    }
+
+    &:hover {
+      border-color : #1a73e8;
+
+    }
+  }
+
+  .button {
+    @include button(red)
+  }
+}
